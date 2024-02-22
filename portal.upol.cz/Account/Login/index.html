@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <meta charset="utf-8" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Jednotné přihlášení |  Univerzita Palackého v Olomouci
+    </title>    
+    
+    <link href="/idp/css/fontAwesome/all.css" rel="stylesheet" type="text/css" />
+    <link href="/idp/css/style3.css" rel="stylesheet" type="text/css" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/idp/images/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/idp/images/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/idp/images/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/idp/images/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/idp/images/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/idp/images/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/idp/images/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/idp/images/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/idp/images/apple-touch-icon-180x180.png" />
+    <link rel="icon" type="image/png" href="/idp/images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/idp/images/android-chrome-192x192.png" sizes="192x192" />
+    <link rel="icon" type="image/png" href="/idp/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/idp/images/favicon-16x16.png" sizes="16x16" />
+    <link rel="manifest" href="/idp/Content/manifest.json" />
+    <link rel="mask-icon" href="/idp/images/safari-pinned-tab.svg" color="#006fad" />
+    <link rel="shortcut icon" href="/idp/images/favicon.ico" />
+    <meta name="apple-mobile-web-app-title" content="UPOL.cz" />
+    <meta name="application-name" content="UPOL.cz" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/idp/images/mstile-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />    
+  </head>
+  <body>    
+    <header id="header">        
+      <div class="container">            
+        <div class="logo">                
+          <a href="https://portal.upol.cz" id="logoLink" style="background-image: url('/idp/images/dummylogo_cs.png');"></a>            
+        </div>                  
+      </div>    
+    </header>  
+
+        <div class="container content">            
+
+
+
+		
+        <div class="">
+
+            <form action="/idp/profile/SAML2/Redirect/SSO?execution=e1s1" method="post" class="form-horizontal">
+
+                    <div class="col-sm-6">
+                        <div class="col-sm-12" style="background-color: transparent;">		
+						
+						<h3 style="margin-bottom: 20px; font-size: 20px; font-weight: normal;">Přihlašovací údaje do Portálu UP</h3>
+  
+							<div class="form-group">
+                                <div class="col-sm-12">
+                                    <div title="Uživatelské jméno" class="input-group"><span class="input-group-addon"><i class="fa fa-user"></i></span><input placeholder="Uživatelské jméno" id="username" name="j_username" class="form-control myInput" type="text" value="" /></div>
+                                </div>
+                            </div>
+							<div class="form-group">
+                                <div class="col-sm-12">
+                                    <div title="Heslo" class="input-group"><span class="input-group-addon"><i class="fa fa-lock"></i></span><input placeholder="Heslo" id="password" name="j_password" class="form-control myInput" type="password" value="" /></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <button class="btn btn-primary form-control" title="Přihlášení" type="submit" name="_eventId_proceed" onClick="this.childNodes[0].nodeValue='Přihlašování probíhá, prosím, čekejte...'" >Přihlášení</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 passwordSecurityRulesDiv">
+                        <h4 class="h4Item">Pravidla zabezpečení hesla.</h4>
+                        <ul style="list-style-type: decimal;">
+                            <li class="liItem"> Nikdy nereagujte na e-mailové výzvy k zadání hesla.</li>
+                            <li class="liItem"> Vždy si zkontrolujte, do jaké stránky heslo zadáváte.</li>
+                            <li class="liItem"> Používejte netriviální heslo.</li>
+                            <li class="liItem"> Heslo nikomu nesdělujte a nepoznamenávejte si jej na místech dostupných jiným osobám.</li>
+                            <li class="liItem"> Nezadávejte heslo na nedůvěryhodných zařízeních.</li>
+                            <li class="liItem"> Braňte se odpozorování hesla při jeho zadávání.</li>
+                            <li class="liItem"> Nepoužívejte stejné heslo do více systémů.</li>
+                        </ul>
+                    </div>
+
+                </form>
+
+            
+</div>
+
+
+    </div>
+	
+	
+
+	    <footer class="classic" id="footer" style="bottom: 0px;">
+        <div class="foot-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-md-4 footerVerticalLine">
+                        <div style="text-align: center;">
+                            <h4>Nemohu se přihlásit, co mám dělat?</h4>
+                            <a href="https://wiki.upol.cz/upwiki/Potize_s_prihlasenim" target="_blank"><i class="fa fa-5x fa-question-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4 footerVerticalLine">
+                        <div style="text-align: center;">
+                            <h4>Co je to jednotné přihlášení?</h4>
+                            <a href="https://wiki.upol.cz/upwiki/SSO" target="_blank"><i class="fa fa-5x fa-key"></i></i></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <div style="text-align: center;">
+                            <h4>Jak na kybernetickou bezpečnost?</h4>
+                            <a href="https://wiki.upol.cz/upwiki/Kyberneticka_bezpecnost" target="_blank"><i class="fa fa-5x fa-unlock-alt"></i></a>
+                        </div>
+                    </div>
+                </div><hr style="border-top: 1px solid #ccc;">
+                <div class="row">
+                    <div class="col-sm-4 col-md-4" style="text-align: center">
+                        <div class="ft-logo">
+                            <a href="http://www.upol.cz/" target="_blank">
+                                <img src="/idp/images/Up_footer_gray_cs.png" width="200" height="62" alt="Univerzita Palackého" onmouseover="this.src = '/idp/images/Up_footer_cs.png'" onmouseout=" this.src='/idp/images/Up_footer_gray_cs.png' " />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4" style="text-align: center">
+                        <a href="http://cvt.upol.cz/" target="_blank">Centrum výpočetní techniky</a>
+                    </div>
+                    <div class="col-sm-4 col-md-4" style="text-align: center">
+                        <strong>Kontakt | náměty a připomínky. </strong><br />
+                        <a href="https://helpdesk.upol.cz" title="helpdesk">Helpdesk - kategorie Síťové služby</a>
+                        <div class="ft-social">
+                            <a href="http://www.facebook.com/itupol.cz/" target="_blank"><img src="/idp/images/footer_facebook.png" width="25" height="25" alt="facebook"></a><a href="http://www.twitter.com/itupol" target="_blank"><img src="/idp/images/footer_twitter.png" width="25" height="25" alt="twitter"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+	
+    
+ 	</body>
+</html>
